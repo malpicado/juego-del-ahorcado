@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu Mono";
+}
+
+body {
+    background-color:#FFC602;
+}
+
+h1{
+    padding: 10px;
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+    text-shadow: 2px 5px 8px rgba(0,0,0,0.45);
+}
+.container {
+    font-size: 18px;
+    background-color: #fff;
+    width: 90vw;
+    max-width: 34em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 3em;
+    border-radius: 15px;
+    box-shadow: 0 1.3em 2.2em rgba(0,0,0,0.35);
+}
+
+#options-container {
+    text-align: center;
+}
+
+#options-container div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.3em 0 2.5em 0;
+}
+
+#options-container button{
+    padding: 0.5em 1.3em;
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
+    border-radius: 15px;
+    text-transform: capitalize;
+}
+
+#options-container button:disabled{
+    border: 3px solid #808080;
+    color: #808080;
+    background-color: #efefef;
+}
+#options-container button.active{
+background-color: #F8EE1E;
+color:#018001;
+border: 3px solid #018001;
+}
+
+.letter-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0.8em;
+}
+
+.letter-container button{
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.new-game-popup {
+    padding: 10em;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#user-input-section {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8em;
+    margin: 0.5em 0 1.3em 0;
+}
+
+canvas {
+display: block;
+margin: auto;
+border: 1px solid #000;
+}
+
+.hide{
+    display: none;
+}
+
+#result-text h2{
+    font-size: 1.7em;
+    text-align: center;
+}
+
+#result-text p{
+    font-size: 1.3em;
+    margin: 1em 0 2em 0;
+}
+
+#result-text span{
+    font-weight: 600;
+}
+
+#new-game-button{
+font-size: 1.3em;
+padding: 0.6em 1.2em;
+background-color: #018001;
+border: 3px solid #F8EE1E;
+border-radius: 15px;
+box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+
+.win-msg {
+    color:#018001 ;
+}
+
+.lose-msg{
+    color: red;
+}
